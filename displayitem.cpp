@@ -78,7 +78,7 @@ void DisplayItem::setCurrentState(int value)
     }
     else if(value == STATE_WRITTING)
     {
-        this->setStyleSheet(STYLE_WAITTING_WRITE);
+        this->setStyleSheet("background-color: green;");
         this->ui->label->setText(deviceId.mid(deviceId.length()-6)+"正在写");
     }
     else if(value == STATE_CURRENT_WRITING)
